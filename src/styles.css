@@ -2,29 +2,54 @@
 h1{
     font-family: 'Roboto Mono', monospace;
     color: #70757a;
-    line-height: 20px;
     display: block;
     font-size:30px;
-
   }
 
-.weather-app{
-    max-width: 600px;
-    margin: 30px auto;
-    padding: 20px;
-    border: 1px solid #dadde1;
-    border-radius: 10px;
-    }
 
 ul{
 margin:10px;
 padding: 0;
     }
+
 li{
+    margin-top: -5px;
     list-style: none;
-    margin: 0;
-    padding: 0;
     color: #70757a;
     font-size: 16px;
-    line-height: 20px;
 }
+
+.weather-app-wraper{
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+.weather-app{
+    padding: 20px;
+    border: 1px solid #dadde1;
+    border-radius: 10px;
+    }
+
+.overview {
+        margin-bottom: 20px;
+    } 
+
+    .weather-temperature img{
+        margin-right: 5px;
+        height: 64px;
+        width: 64px;
+    }
+
+    .weather-temperature strong {
+            color: rgb(33,33,33);
+            font-size: 64px;
+            font-weight: 400;
+            line-height: 1;
+        }
+
+    .weather-temperature .units{
+        position: relative;
+        font-size: 14px;
+        top: -34px;
+
+    }
