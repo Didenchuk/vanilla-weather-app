@@ -40,12 +40,19 @@ function displayTemperature(response) {
     iconElement.setAttribute("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 }
 
-
-
-
+function search(city) {
 let apiKey = "d50daaabbd98c5b47ef6ff59824a0d1e";
-let city = "Amsterdam" 
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q= ${city}&appid=${apiKey}&units=metric`;
-
-
 axios(apiUrl).then(displayTemperature);
+}
+
+function handleSubmit(event) {
+    event.preventDefault();
+    let cityInputElement = document.querySelector("#city-input");
+    search(cityInputElement.value);
+}
+
+
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
