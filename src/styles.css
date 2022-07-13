@@ -76,12 +76,9 @@ li::first-letter{
 
     .weather-forecast{
         display: flex;
-        flex-wrap: nowrap;
         justify-content: center;
         margin-top: 20px;
     }
-
-   
 
 
         .weather-forecast-date{
